@@ -1,0 +1,15 @@
+from fastapi import FastAPI
+from t2qbot.config.settings import get_settings
+from t2qbot.api.routes_health import router as health_router
+from t2qbot.api.routes_chat import router as chat_router
+
+def create_app() -> FastAPI:
+    settings = get_settings()
+    app = FastAPI(title = settings.app_name)
+    
+    app.include_router(health_router)
+    app.include_router(chat_router, prefix="/v1")
+    
+    return app
+
+app = create_app()

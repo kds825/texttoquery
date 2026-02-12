@@ -1,0 +1,20 @@
+[project]
+name = "t2qbot"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "sqlalchemy",
+  "aiosqlite",
+  "pydantic",
+  "pydantic-settings",
+  "httpx",
+  "openai"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
