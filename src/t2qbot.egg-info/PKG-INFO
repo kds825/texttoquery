@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: t2qbot
+Version: 0.1.0
+Requires-Python: >=3.10
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: sqlalchemy
+Requires-Dist: aiosqlite
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: httpx
+Requires-Dist: openai

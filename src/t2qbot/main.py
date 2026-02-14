@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from t2qbot.config.settings import get_settings
+# from t2qbot.config.settings import get_settings
 from t2qbot.api.routes_health import router as health_router
 from t2qbot.api.routes_chat import router as chat_router
 
