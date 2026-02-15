@@ -1,0 +1,6 @@
+base = "dark"
+primaryColor="#7C5CFC"
+backgroundColor ="#0E1117"
+secondaryBackgroundColor = "#161B22"
+textColor = "#E6EdF3"
+font = "sans serif"
